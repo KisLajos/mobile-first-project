@@ -66,7 +66,6 @@ body {
 
 }
 .burger-container {
-    /* display: flex; */
     width: 5.2rem;
     height: 5.2rem;
 
@@ -101,7 +100,6 @@ body {
     height: 175%;
     display: none;
     position: fixed;
-    
     background-color: transparent;
     z-index: -1;
 
@@ -123,7 +121,6 @@ body {
     background-color: #feed01;
     opacity: 0;
     position: absolute;
-    /* left: calc(55vw - 2.5rem); */
     width:5rem;
     height: 5rem;
     border-radius: 50%;
@@ -160,15 +157,3 @@ body {
 }
 
 
-
-/* Get the SOME-case from GitHub: 
-https://github.com/Kimster55/somecase
-
-Put your own content in 3 places
-It can be some-content or something else
-It can be changes in the grid-structure or layout
-
-Upload to your own GitHub repo
-
-Share it on a padlet: https://eaaa.padlet.org/kije/3
-Code: 3 */
