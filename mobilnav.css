@@ -9,6 +9,7 @@
     --translate7of7: translate(calc(98.902rem * var(--constant)), calc(14.781rem * var(--constant)));
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 *,*::after,*::before {
     box-sizing: border-box;
@@ -17,9 +18,10 @@
 }
 html{
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
 }
 body {
-    background-color: yellowgreen;
+    background-color: white;
     background-image: url(img/thumb-zone.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -65,15 +67,16 @@ body {
     z-index: 2;
 
 }
-.burger-container {
+/* .burger-container {
+    display: flex;
     width: 5.2rem;
     height: 5.2rem;
 
-}
+} */
 .burger-container img {
     width: 5.2rem;
     height: 5.2rem;
-    position: absolute;
+    border-radius: 50%;
 }
 .nav-toggle-label::after{
     content: "";
@@ -100,6 +103,7 @@ body {
     height: 175%;
     display: none;
     position: fixed;
+    
     background-color: transparent;
     z-index: -1;
 
@@ -121,33 +125,43 @@ body {
     background-color: #feed01;
     opacity: 0;
     position: absolute;
-    width:5rem;
-    height: 5rem;
+    transform: scale(0.7);
+    width:5.2rem;
+    height: 5.2rem;
     border-radius: 50%;
     z-index: 1;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     transition: transform 1000ms ease, opacity 1000ms cubic-bezier(.60,0,0,0);
     
+
 }
 .nav-toggle:checked ~ #nav1 {
-    transform: var(--translate2of7);
+    transform: var(--translate1);
     opacity: 1;
 }
 .nav-toggle:checked ~ #nav2 {
-    transform: var(--translate4of7);
+    transform: var(--translate3of7);
     opacity: 1;
 }
 .nav-toggle:checked ~ #nav3 {
-    transform: var(--translate6of7);
+    transform: var(--translate5of7);
     opacity: 1;
+}
+.nav-toggle:checked ~ #nav4 {
+    transform: var(--translate7of7);
+    opacity: 1;
+
 }
 
 .nav-item a{
+    display: inline-block;
     text-decoration: none;
-    margin: 2.5rem;
-    padding: 2.5rem;
+    width: 100%;
+    height:100%;
     border-radius: 50%;
+    color: black;
+    line-height: 5.2rem;
+
 }
 .thumb-pic{
     width: 100%;
@@ -155,5 +169,3 @@ body {
     bottom: 0;
     z-index: -200;
 }
-
-
