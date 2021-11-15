@@ -176,3 +176,28 @@ body {
     bottom: 0;
     z-index: -200;
 }
+
+
+body {
+    display: grid;
+
+    grid-template-areas: 
+    'header'
+    'section 1'
+    'section 2'
+    'section 3'
+    'section 4'
+    'footer';
+
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+/* media query
+grid-template-areas: 
+    'header'
+    'section-1 section-2'
+    'section 3'
+    'section 4'
+    'footer';
+*/
