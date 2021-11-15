@@ -67,16 +67,23 @@ body {
     z-index: 2;
 
 }
-/* .burger-container {
+.location-icon {
     display: flex;
-    width: 5.2rem;
-    height: 5.2rem;
-
-} */
-.burger-container img {
+    position: fixed;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    align-items: center;
+    justify-content: center;
+    bottom: 2.6rem;
+    right: 2.6rem;
+}
+.burger-container img, .location-icon img {
     width: 5.2rem;
     height: 5.2rem;
     border-radius: 50%;
+    position: relative;
 }
 .nav-toggle-label::after{
     content: "";
