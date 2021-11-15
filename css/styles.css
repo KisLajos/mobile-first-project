@@ -262,3 +262,15 @@ grid-template-areas:
     'section 4'
     'footer';
 */
+
+.centered-text {
+    text-align: center;
+}
+
+table {
+    padding: 10px;
+}
+
+td {
+    padding: 5px;
+}
