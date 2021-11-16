@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selection</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -30,7 +31,13 @@
 
         <section class="whats-in-store">
             <h2>What's in store?</h2>
-            <img src="yellow-bike.png" alt="Yellow bike">
+            
+            <div class="main-gallery js-flickity"
+                data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+                <div class="gallery-cell"><img src="img/yellow-bike-small.jpg" alt="Yellow bike"></div>
+                <div class="gallery-cell"><img src="img/yellow-bike-small.jpg" alt="Yellow bike"></div>
+                <div class="gallery-cell"><img src="img/yellow-bike-small.jpg" alt="Yellow bike"></div>
+            </div>
         </section>
 
         <section class="handled-with-care">
@@ -41,7 +48,7 @@
             </p>
         </section>
 
-        <img src="chain.png" alt="Chain">
+        <img src="img/chain.png" alt="Chain">
 
         <section class="info-box">
             Be sure to come in the shop
@@ -101,6 +108,8 @@
             </a>
         </div>
     </footer>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
