@@ -1,4 +1,5 @@
 :root {
+    --clr-offblack: rgba(43, 42, 40, 0.95);
     --constant: 0.14;
     --translate1: translate(calc(-14.781rem * var(--constant)), calc(-98.902rem * var(--constant)));
     --translate2of7: translate(calc(16.218rem * var(--constant)), calc(-98.676rem * var(--constant)));
@@ -35,6 +36,7 @@ body {
     grid-template-columns: 1fr;
 }
 
+
 header {
     background-color: rgba(43, 42, 40, 0.95);
     display: flex;
@@ -47,6 +49,27 @@ header {
 }
 .bike-buttons {
     grid-area: 'section-2';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.bike-buttons img {
+    width: 100%;
+}
+.bike-buttons div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.button {
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--clr-offblack);
+    color: white;
+    
+
 }
 
 .tagline{
