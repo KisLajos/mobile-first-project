@@ -272,18 +272,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.gmap_canvas {
-    overflow: hidden;
-    background: none!important;
-    height: 500px;
-    width: 300px;
-}
-.mapouter{
-    position: relative;
-    text-align: right;
-    height: 500px;
-    width: 300px;
-}
 
 
 /* media query
