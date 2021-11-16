@@ -239,7 +239,7 @@ footer {
 }
 
 /* contact page */
-.information .social-media{
+.information, .social-media{
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -295,6 +295,11 @@ hr {
     margin-left: 1rem;
     font-size: 2.6rem;
     font-weight: 100;
+}
+.social-media .social-icons{
+    display: flex;
+    justify-content: center;
+
 }
 #contact-page .info-box {
     margin-bottom: 5rem;
