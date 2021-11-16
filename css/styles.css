@@ -292,8 +292,23 @@ footer {
     margin-bottom: 5rem;
 }
 .repair-box{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
+.prices {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.prices table{
+    padding: 0rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+
+}
+.prices 
 
 
 /* contact sub-page */
@@ -303,7 +318,7 @@ footer {
     align-content: space-between;
     justify-content: space-between;
 }
-.information h1, .information h2, .social-media h1, .social-media h2 {
+.information h1, .information h2, .social-media h1, .social-media h2, .prices h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 100;
     color: var(--clr-black095);
