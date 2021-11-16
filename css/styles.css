@@ -36,7 +36,10 @@ body {
 }
 
 header {
-    
+    background-color: rgba(43, 42, 40, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .introduction {
     grid-area: 'section-1';
@@ -258,6 +261,10 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: -200;
+}
+.logo {
+    height: 6rem;
+    margin: 1rem;
 }
 
 
