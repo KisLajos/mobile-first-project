@@ -1,5 +1,6 @@
 :root {
     --clr-black08: rgba(43, 42, 40, 0.8);
+    --clr-black095: rgba(43, 42, 40, 0.95);
     --clr-yellow: rgba(254, 237, 1, 0.9);
     --clr-white: rgba(255, 255, 255, 0.85);
     --constant: 0.14;
@@ -40,7 +41,7 @@ body {
 
 
 header {
-    background-color: rgba(43, 42, 40, 0.95);
+    background-color: var(--clr-black095);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +70,6 @@ header {
     text-align: center;
     text-transform:uppercase;
     text-decoration: none;
-<<<<<<< Updated upstream
     background-color: var(--clr-black08);
     color: var(--clr-white);
     margin: 1rem;
@@ -77,10 +77,6 @@ header {
     font-size: 2.5rem;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
-=======
-    background-color: var(--clr-offblack);
-    color: rgba(255, 255, 255, 100);
->>>>>>> Stashed changes
     
 
 }
@@ -103,7 +99,7 @@ header {
     grid-area: 'section-4';
     display:flex;
     flex-direction: column;
-    background-color: #feed01;
+    background-color: var(--clr-yellow);
     width: 88%;
     height: 20rem;
     margin: 1.5rem auto;
@@ -214,7 +210,7 @@ footer {
     bottom: 0;
     left: 0;
     background-color: transparent;
-    border: 0.3rem solid #feed01;
+    border: 0.3rem solid var(--clr-yellow);
     border-radius: 50%;
     width: 5.2rem;
     height: 5.2rem;
@@ -252,7 +248,7 @@ footer {
 
 .nav-item{
     display: flex;
-    background-color: #feed01;
+    background-color: var(--clr-yellow);
     opacity: 0;
     position: absolute;
     transform: scale(0.7);
@@ -303,14 +299,11 @@ footer {
     height: 6rem;
     margin: 1rem;
 }
-<<<<<<< Updated upstream
 .map {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-=======
->>>>>>> Stashed changes
 
 
 /* media query
