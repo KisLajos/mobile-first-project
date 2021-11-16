@@ -317,7 +317,6 @@ footer {
     font-size: 2.4rem;
 }
 h2 .linkto {
-    /* position: relative; */
     align-self: flex-end;
     text-align: right;
     text-decoration: none;
@@ -344,7 +343,6 @@ hr {
 .message-us a {
     text-decoration: none;
     color: var(--clr-black095);
-    /* margin: 0 auto; */
     height: 100%;
 }
 .message-us h2{
@@ -365,7 +363,7 @@ hr {
 
 .chain {
     width: 100%;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 
