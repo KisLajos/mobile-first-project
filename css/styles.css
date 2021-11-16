@@ -174,24 +174,24 @@ footer {
 }
 
 /* contact page */
-.information{
+.information .social-media{
     display: flex;
     flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
 }
-.information h1, .information h2 {
+.information h1, .information h2, .social-media h1, .social-media h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 100;
     color: var(--clr-black095);
     margin: 0 0 0 1rem
 
 }
-.information h1 {
+.information h1, .social-media h1 {
     font-size: 3.9rem;
 }
-.information h2 {
-    font-size: 2.6rem;
+.information h2, .social-media h2 {
+    font-size: 2.4rem;
 }
 h2 .linkto {
     /* position: relative; */
@@ -202,6 +202,37 @@ h2 .linkto {
 hr {
     width: 80%;
     margin: 0.5rem 0 1.5rem 1rem;
+}
+.message-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    justify-content:center;
+    text-decoration: none;
+    position: relative;
+    left: -1.8rem;
+}
+.message-us img {
+    height: 6rem;
+}
+.message-us a {
+    text-decoration: none;
+    color: var(--clr-black095);
+    /* margin: 0 auto; */
+    height: 100%;
+}
+.message-us h2{
+    display: inline;
+    font-family: 'Rationale', sans-serif;
+    margin-left: 1rem;
+    font-size: 2.6rem;
+    font-weight: 100;
+}
+#contact-page .info-box {
+    margin-bottom: 5rem;
 }
 
 
