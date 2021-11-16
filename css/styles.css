@@ -163,20 +163,24 @@ td {
 }
 
 footer {
-    /* background-color: red; */
-    height: 6rem;
+    background-color: var(--clr-black095);
     width: 100%;
     display: block;
     position: relative;
     bottom:0;
     z-index: 1;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+<<<<<<< HEAD
 /* contact page */
 
 
 
+=======
+>>>>>>> ae41e02c17f42e158db03c94a44923104e2dbce6
 /* --navigation-- */
 .nav-toggle {
     display:none;
