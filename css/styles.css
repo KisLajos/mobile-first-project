@@ -52,6 +52,7 @@ header {
 }
 .introduction {
     grid-area: 'section-1';
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +74,13 @@ header {
     font-weight: 100;
     font-size: 1.9rem;
 
+=======
+    font-family: 'Rationale', sans-serif;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> e20e1ba80357ffa57d7dcb0a0319b25e64c43288
 }
 .bike-buttons {
     grid-area: 'section-2';
@@ -329,6 +337,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.address {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 
