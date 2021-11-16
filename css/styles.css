@@ -40,6 +40,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 7rem;
 }
 .introduction {
     grid-area: 'section-1';
