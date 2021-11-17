@@ -605,16 +605,15 @@ hr {
     width: 90%;
 }
 
-@media only screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 900px) {
     header {
         justify-content: space-between;
     }
     .desktop-nav ul {
         display: flex;
     }
-}
-
-@media screen and (min-width: 900px) {
     .content {
         grid-template-areas: 
         'section-2 section-1'
