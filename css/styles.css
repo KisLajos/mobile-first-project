@@ -689,4 +689,8 @@ hr {
     .introduction-middle {
         padding: 4rem;
     }
+
+    .tagline h2 {
+        font-size: 5rem;
+    }
 }
