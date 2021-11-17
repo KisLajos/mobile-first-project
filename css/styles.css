@@ -391,6 +391,10 @@ td {
     grid-area: section-5;
 }
 
+.whats-in-store hr {
+    display: none;
+}
+
 
 
 /* ---repair sub-page--- */
@@ -472,7 +476,8 @@ h2 .linkto {
     text-align: right;
     text-decoration: none;
 }
-hr {
+.information hr,
+.social-media hr {
     width: 80%;
     margin: 0.5rem 0 1.5rem 1rem;
 }
@@ -866,5 +871,52 @@ hr {
     .tagline h2 {
         font-size: 5rem;
 
+    }
+
+    #selection-box {
+        background-color: var(--clr-white);
+        box-shadow: none;
+    }
+
+    .whats-in-store hr {
+        display: inline-block;
+        width: 90%;
+        border: solid 1px var(--clr-black095);
+        margin-bottom: 2rem;
+    }
+
+    .whats-in-store h2 {
+        text-transform: none;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .handled-with-care {
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+    }
+
+    .handled-with-care h2 {
+        font-size: 4rem;
+    }
+
+    .handled-with-care p {
+        width: 40%;
+    }
+
+    .be-sure > .info-box {
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+
+    .be-sure hr {
+        display: inline-block;
+        width: 90%;
+        border: solid 1px var(--clr-black095);
+        margin-bottom: 2rem;
     }
 }
