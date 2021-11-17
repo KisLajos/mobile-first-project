@@ -75,6 +75,7 @@ footer {
     justify-content:space-between;
     padding: 0rem;
     margin: 3rem 0.3rem 0 0;
+
    
 }
 .desktop-nav li {
@@ -82,18 +83,28 @@ footer {
     font-weight: 100;;
     text-transform: uppercase;
     display:inline-block;
+    transition: ease 0.5s;
+    padding: 0 0 0 0;
+    margin: 0;
    
 }
+.desktop-nav li:hover {
+    box-shadow: inset 0px 0px 10px black;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+}
+
 .desktop-nav a {
     font-size: 1.6rem;
     display:block;
     text-decoration: none;
     color:#feed01;
-    padding: 0 0.3rem;
-    margin: 2rem 2rem 0.2rem 2rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 1.6rem 2rem 0.2rem 2rem;
 }
 .header-links hr {
-    margin: 2.2rem 0.3rem 0.0rem 0.3rem;
+    margin: 1rem 0.3rem 0.0rem 0.3rem;
     color: #feed01;
 }
 
@@ -613,6 +624,9 @@ hr {
     }
     .desktop-nav ul {
         display: flex;
+    }
+    .nav-container {
+        display: none;
     }
     .content {
         grid-template-areas: 
