@@ -223,7 +223,6 @@ footer {
 }
 
 .info-box {
-    
     display:flex;
     flex-direction: column;
     background-color: var(--clr-yellow);
@@ -241,6 +240,7 @@ footer {
 
 .info-box-home {
     grid-area: section-4;
+    max-width: 55rem;
 }
 
 .info-box-repair {
@@ -259,6 +259,7 @@ footer {
 .review-card {
     position:relative;
     width: 88%;
+    max-width: 55rem;
     margin: 5rem auto;
     box-shadow: 0px 10px 16px 4px hsla(0, 0%, 0%, 0.2);
     text-align: center;
@@ -800,6 +801,8 @@ hr {
 
     .info-box-home {
         width: 30%;
+        min-width: 40rem;
+
     }
     .info-box-home table {
         width: 80%;
