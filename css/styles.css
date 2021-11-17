@@ -757,7 +757,13 @@ h2 .linkto {
     grid-area: section-3;
 }
 
-
+.information-blocks span {
+    width: 100px;
+    clear: left;
+    float: left;
+    text-align: right;
+    padding-right: 2rem;
+}
 
 @media screen and (min-width: 900px) {
     header {
@@ -889,6 +895,13 @@ h2 .linkto {
         padding: 4rem;
     }
 
+    .introduction-contact {
+        font-family: 'Rationale', sans-serif;
+        font-size: 6rem ;
+        font-weight: 100;
+        margin-left: 0.5rem;
+    }
+
     .introduction h2 {
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 100;
@@ -987,9 +1000,10 @@ h2 .linkto {
         height: 8rem;
     }
 
-    .information hr {
+    .information hr,
+    .social-media hr {
         width: 50%;
-    }
+    } 
 
     .information-blocks {
         display: flex;
@@ -1003,12 +1017,8 @@ h2 .linkto {
         width: 66%;
     }
 
-    .information-blocks span {
-        width: 100px;
-        clear: left;
-        float: left;
-        text-align: right;
-        padding-right: 2rem;
+    .introduction-contact {
+        padding: unset;
     }
 
     .chain{
