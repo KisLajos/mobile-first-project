@@ -78,6 +78,10 @@ footer {
     align-items: center;
     height: 9.5rem;
 }
+#find-us footer{
+    position:absolute;
+    bottom:0;
+}
 
 /* ---navigation in header on desktop--- */
 .desktop-nav ul {
@@ -199,7 +203,7 @@ footer {
     text-decoration: none;
     background-color: var(--clr-yellow);
     color:var(--clr-black095);
-    margin: 1rem;
+    margin: -1rem 1rem 4rem;
     width: 50%;
     padding: 0.9rem 2.5rem;
     font-size: 2.5rem;
@@ -412,7 +416,11 @@ td {
 .whats-in-store hr {
     display: none;
 }
+.be-sure .info-box{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 
+}
 .be-sure hr {
     display: none;
 }
