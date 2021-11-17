@@ -323,7 +323,9 @@ footer {
     width: 100%;
     height: 24rem;
     margin-right: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }  
 
 .flickity-button {
@@ -739,7 +741,7 @@ hr {
     
     .repair-content {
         grid-template-areas: 
-        'section-2 section-1'
+        'section-1 section-2'
         'section-3 section-3'
         'section-4 section-4'
         'section-5 section-5'
@@ -750,15 +752,22 @@ hr {
     
     .selection-content {
         grid-template-areas: 
-        'section-2 section-1'
+        'section-1 section-2'
         'section-3 section-3'
         'section-4 section-4'
         'section-5 section-5'
-        'section-6 section-6'
         ;
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr 1fr;
     }
+
+    .gallery-cell {
+        
+        
+        width: 33%;
+        text-align: center;
+        margin-right: 1rem;
+    }  
     
     /* .contact-content {
         grid-template-areas: 
