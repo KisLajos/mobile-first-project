@@ -1,0 +1,7 @@
+# disallowing images to be indexed by google
+User-agent: Googlebot-Image
+Disallow: /
+
+# allowing all other user agents to crawl the website
+User-agent: *
+Allow: /
