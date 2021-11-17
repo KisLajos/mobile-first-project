@@ -286,6 +286,14 @@ footer {
     text-align: center;
 }
 
+.right-aligned-text {
+    text-align: right;
+}
+
+.closed-time {
+    padding-right: 1rem;
+}
+
 .whats-in-store h2 {
     font-size: 2.5rem;
     font-family: 'Roboto Condensed', sans-serif;
@@ -632,6 +640,14 @@ hr {
 
     .rate-button{
         width: initial;
+    }
+
+    .opening-hours {
+        width: 50%;
+    }
+
+    .reviews-title {
+        font-size: 4rem;
     }
 
     .review-cards-wrapper {
