@@ -31,14 +31,29 @@ body {
     background-color: white;
     
 }
-.content {
+.content,
+.repair-content,
+.selection-content,
+.contact-content {
     display: grid;
     grid-template-areas: 
     'section-1'
     'section-2'
     'section-3'
     'section-4'
-    'section-5';
+    'section-5'
+    ;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr;
+}
+
+.findus-content {
+    display: grid;
+    grid-template-areas: 
+    'section-1'
+    'section-2'
+    'section-3'
+    ;
     grid-template-rows: repeat(5, auto);
     grid-template-columns: 1fr;
 }
@@ -205,7 +220,7 @@ footer {
 }
 
 .info-box {
-    grid-area: section-4;
+    
     display:flex;
     flex-direction: column;
     background-color: var(--clr-yellow);
@@ -220,6 +235,15 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+.info-box-home {
+    grid-area: section-4;
+}
+
+.info-box-repair {
+    grid-area: section-2;
+}
+
 .info-box h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
@@ -279,8 +303,12 @@ footer {
     font-weight: 300;
 }
 
-/* ---selection page--- */
+.reviews {
+    grid-area: section-5;
+    
+}
 
+/* ---selection page--- */
 
 .gallery-cell {
     width: 100%;
@@ -335,10 +363,23 @@ td {
     font-weight: 100;
 }
 
-.reviews {
-    grid-area: section-5;
-    
+.selection-content > #selection-box{
+    grid-area: section-2;
 }
+
+.selection-content > .whats-in-store{
+    grid-area: section-3;
+}
+
+.selection-content > .handled-with-care{
+    grid-area: section-4;
+}
+
+.selection-content > .be-sure{
+    grid-area: section-5;
+}
+
+
 
 /* ---repair sub-page--- */
 
@@ -357,7 +398,7 @@ td {
     width: 65%;
     margin-bottom: 5rem;
 }
-.repair-box{
+.repair-box1, .repair-box2{
     margin-bottom: 3rem;
 }
 .prices {
@@ -374,7 +415,22 @@ td {
     margin-left: 1rem;
 
 }
-.prices 
+
+.repair-content > .repair-box1{
+    grid-area: section-2;
+}
+
+.repair-content > .prices{
+    grid-area: section-3;
+}
+
+.repair-content > #discount-box{
+    grid-area: section-4;
+}
+
+.repair-content > .wait-times{
+    grid-area: section-5;
+}
 
 
 /* ---contact sub-page--- */
@@ -447,6 +503,22 @@ hr {
 .chain {
     width: 100%;
     margin: 1rem 0;
+}
+
+.contact-content > .information{
+    grid-area: section-2;
+}
+
+.contact-content > .message-us{
+    grid-area: section-3;
+}
+
+.contact-content > .social-media{
+    grid-area: section-4;
+}
+
+.contact-content > .info-box-contact{
+    grid-area: section-5;
 }
 
 
@@ -624,6 +696,14 @@ hr {
     width: 90%;
 }
 
+.findus-content > .map{
+    grid-area: section-2;
+}
+
+.findus-content > .address-wrapper{
+    grid-area: section-3;
+}
+
 
 
 @media screen and (min-width: 900px) {
@@ -645,6 +725,50 @@ hr {
         'section-6 section-6'
         ;
         grid-template-rows: repeat(5, auto);
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .repair-content {
+        grid-template-areas: 
+        'section-2 section-1'
+        'section-3 section-3'
+        'section-4 section-4'
+        'section-5 section-5'
+        ;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .selection-content {
+        grid-template-areas: 
+        'section-2 section-1'
+        'section-3 section-3'
+        'section-4 section-4'
+        'section-5 section-5'
+        'section-6 section-6'
+        ;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* .contact-content {
+        grid-template-areas: 
+        'section-2 section-1'
+        'section-3 section-3'
+        'section-4 section-4'
+        'section-5 section-5'
+        'section-6 section-6'
+        ;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 1fr 1fr;
+    } */
+    
+    .findus-content {
+        grid-template-areas: 
+        'section-1 section-3'
+        'section-2 section-3'
+        ;
+        grid-template-rows: repeat(2, auto);
         grid-template-columns: 1fr 1fr;
     }
 
