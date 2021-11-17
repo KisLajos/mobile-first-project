@@ -718,6 +718,9 @@ hr {
     .nav-container {
         display: none;
     }
+    .chain {
+        display: none;
+    }
     .content {
         grid-template-areas: 
         'section-2 section-1'
@@ -753,8 +756,6 @@ hr {
     }
 
     .gallery-cell {
-        
-        
         width: 33%;
         text-align: center;
         margin-right: 1rem;
