@@ -26,9 +26,11 @@
 html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 body {
     background-color: white;
+    /* height:90% */
     
 }
 .content,
@@ -69,9 +71,8 @@ header {
 footer {
     background-color: var(--clr-black095);
     width: 100%;
-    display: block;
-    position: relative;
-    bottom:0;
+    position:relative;
+    bottom: 0rem;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -79,8 +80,7 @@ footer {
     height: 9.5rem;
 }
 #find-us footer{
-    position:absolute;
-    bottom:0;
+    bottom:-9.5rem;
 }
 
 /* ---navigation in header on desktop--- */
@@ -1070,7 +1070,7 @@ h2 .linkto {
         background-color: transparent;
         box-shadow: none;
     }
-    .repair-content .introduction::after, .img-container::after{
+    .repair-content .introduction::after, .img-container1::after{
             content: '';
             position: absolute;
             width: 100%;
