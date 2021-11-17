@@ -911,7 +911,6 @@ h2 .linkto {
         font-size: 5rem;
 
     }
-<<<<<<< Updated upstream
 
     #selection-box {
         background-color: var(--clr-white);
@@ -1012,8 +1011,7 @@ h2 .linkto {
         text-align: right;
         padding-right: 2rem;
     }
-}
-=======
+
     .chain{
         display: none;
     }
@@ -1060,14 +1058,13 @@ h2 .linkto {
     /* --find-us page desktop-- */
     .address {
         margin: auto;
-        font-size: ;
+        /* font-size: ; */
 
     }
     .map {
         padding-left:7rem;
-        width: 110%
+        width: 110%;
 
 
     }
 }
->>>>>>> Stashed changes
