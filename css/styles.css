@@ -133,6 +133,7 @@ footer {
 .introduction {
     grid-area: section-1;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
 }
@@ -245,6 +246,17 @@ footer {
 
 .info-box-repair {
     grid-area: section-2;
+}
+.img-container {
+    position:relative;
+    height: 100%
+}
+.repair-img {
+    display: none;
+    grid-area: section-2;
+    width: 100%;
+    
+
 }
 
 .info-box h2 {
@@ -410,12 +422,23 @@ td {
 }
 .wait-times {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
 
 }
+.waiting-img {
+    display:none;
+    position: relative;
+    width: 100%;
+    max-width: 30rem;
+    margin: 10rem 10rem 10rem auto;
+    padding-left: 1rem;
+    
+}
 #discount-box {
     width: 65%;
+    max-width: 40rem;
     margin-bottom: 5rem;
 }
 .repair-box1, .repair-box2{
@@ -424,6 +447,7 @@ td {
 .prices {
     display: flex;
     text-align: center;
+    position:relative;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -447,10 +471,13 @@ td {
 .repair-content > #discount-box{
     grid-area: section-4;
 }
-
+.waiting-img {
+    grid-area: section-5;
+}
 .repair-content > .wait-times{
     grid-area: section-5;
 }
+
 
 
 /* ---contact sub-page--- */
@@ -692,12 +719,20 @@ h2 .linkto {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 2rem;
+    width: 100%;
+}
+.address-wrapper{
+    display:flex;
+
 }
 .address {
-    align-items: flex-start;
+    display: flex;
+    /* align-items: flex-end; */
     flex-direction: column;
-    margin: 1rem;
+    /* margin: 1rem 2rem 2rem; */
+    /* justify-content: center; */
+
 }
 .address h2 {
     font-size: 2rem;
@@ -711,7 +746,8 @@ h2 .linkto {
     font-weight: 300;
 }
 .address hr {
-    width: 90%;
+    width: 100%;
+    margin: 1rem auto;
 }
 
 .findus-content > .map{
@@ -748,16 +784,18 @@ h2 .linkto {
         grid-template-rows: repeat(5, auto);
         grid-template-columns: 1fr 1fr;
     }
-    
+    .repair-content > .wait-times{
+        grid-area: section-6;
+    }
     .repair-content {
         grid-template-areas: 
         'section-1 section-2'
         'section-3 section-3'
         'section-4 section-4'
-        'section-5 section-5'
+        'section-5 section-6'
         ;
         grid-template-rows: repeat(4, auto);
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 40% 60%;
     }
     
     .selection-content {
@@ -873,6 +911,7 @@ h2 .linkto {
         font-size: 5rem;
 
     }
+<<<<<<< Updated upstream
 
     #selection-box {
         background-color: var(--clr-white);
@@ -974,3 +1013,61 @@ h2 .linkto {
         padding-right: 2rem;
     }
 }
+=======
+    .chain{
+        display: none;
+    }
+
+    /* repair-page desktop */
+    .repair-content .repair-img {
+        display:block;
+    }
+    .repair-box1 {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .repair-content .introduction::after, .img-container::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0.2rem; 
+            background: black; 
+            top: 100%;
+            left: 0;
+            margin: 2rem 0;
+    }
+    .wait-times::before, #discount-box + .img-container::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2rem; 
+        background: black; 
+        top: 0%;
+        left: 0;
+        margin: 2rem 0;
+    }
+    .prices {
+        width: 40%;
+        margin: 5rem auto 1rem auto;
+    }
+    .waiting-img {
+        display:block;
+    }
+    .repair-box2 {
+        max-width: 40rem;
+    }
+
+    /* --find-us page desktop-- */
+    .address {
+        margin: auto;
+        font-size: ;
+
+    }
+    .map {
+        padding-left:7rem;
+        width: 110%
+
+
+    }
+}
+>>>>>>> Stashed changes
