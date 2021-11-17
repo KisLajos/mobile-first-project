@@ -395,6 +395,10 @@ td {
     display: none;
 }
 
+.be-sure hr {
+    display: none;
+}
+
 
 
 /* ---repair sub-page--- */
@@ -483,15 +487,12 @@ h2 .linkto {
 }
 .message-us {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    align-content: center;
-    margin: 0 auto;
     margin-bottom: 2rem;
-    justify-content:center;
+    justify-content: center;
     text-decoration: none;
-    position: relative;
-    left: -1.8rem;
+    /* position: relative;
+    left: -1.8rem; */
 }
 .message-us img {
     height: 6rem;
@@ -499,10 +500,10 @@ h2 .linkto {
 .message-us a {
     text-decoration: none;
     color: var(--clr-black095);
-    height: 100%;
+    
 }
 .message-us h2{
-    display: inline;
+    
     font-family: 'Rationale', sans-serif;
     margin-left: 1rem;
     font-size: 2.6rem;
@@ -918,5 +919,58 @@ h2 .linkto {
         width: 90%;
         border: solid 1px var(--clr-black095);
         margin-bottom: 2rem;
+    }
+
+    .contact-content > .introduction {
+        display: block;
+    }
+
+    .contact-content {
+        margin: 5rem;
+    }
+
+    .info-box-contact {
+        width: 40%;
+    }
+
+    .social-media > .social-icons {
+        display: block;
+    }
+
+    .message-us {
+        justify-content: flex-start;
+    }
+
+    .message-us h2 {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    .message-us img {
+        height: 8rem;
+    }
+
+    .information hr {
+        width: 50%;
+    }
+
+    .information-blocks {
+        display: flex;
+    }
+
+    .information-left {
+        width: 33%;
+    }
+
+    .information-right {
+        width: 66%;
+    }
+
+    .information-blocks span {
+        width: 100px;
+        clear: left;
+        float: left;
+        text-align: right;
+        padding-right: 2rem;
     }
 }
