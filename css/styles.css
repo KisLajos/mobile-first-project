@@ -539,7 +539,6 @@ h2 .linkto {
 .social-media .social-icons{
     display: flex;
     justify-content: center;
-
 }
 #contact-page .info-box {
     margin-bottom: 5rem;
@@ -566,13 +565,14 @@ h2 .linkto {
     grid-area: section-5;
 }
 
-
+.social-icons a {
+    text-decoration: none;
+}
 
 /* ---navigation-button for mobile-size--- */
 .nav-toggle {
     /* pointer-events: auto; */
     display:none;
-
 }
 
 .nav-container{ 
@@ -898,9 +898,10 @@ h2 .linkto {
 
     .introduction-contact {
         font-family: 'Rationale', sans-serif;
-        font-size: 6rem ;
+        font-size: 7rem ;
         font-weight: 100;
         margin-left: 0.5rem;
+        margin-bottom: 4rem;
     }
 
     .introduction h2 {
@@ -990,6 +991,8 @@ h2 .linkto {
 
     .message-us {
         justify-content: flex-start;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 
     .message-us h2 {
