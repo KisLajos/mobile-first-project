@@ -105,7 +105,7 @@ footer {
 
 
 .introduction {
-    grid-area: 'section-1';
+    grid-area: section-1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +129,7 @@ footer {
 
 }
 .bike-buttons {
-    grid-area: 'section-2';
+    grid-area: section-2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,7 +180,7 @@ footer {
 
 .tagline{
     display: flex;
-    grid-area: 'section-3';
+    grid-area: section-3;
     border-block: 0.3rem solid black;
     align-items: center;
     justify-content: center;
@@ -194,7 +194,7 @@ footer {
 }
 
 .info-box {
-    grid-area: 'section-4';
+    grid-area: section-4;
     display:flex;
     flex-direction: column;
     background-color: var(--clr-yellow);
@@ -317,8 +317,8 @@ td {
 }
 
 .reviews {
-    grid-area: 'section-5';
-
+    grid-area: section-5;
+    
 }
 
 /* ---repair sub-page--- */
@@ -614,11 +614,64 @@ hr {
     }
 }
 
-/* media query
-grid-template-areas: 
-    'header'
-    'section-1 section-2'
-    'section 3'
-    'section 4'
-    'footer';
-*/
+@media screen and (min-width: 900px) {
+    .content {
+        grid-template-areas: 
+        'section-2 section-1'
+        'section-3 section-3'
+        'section-4 section-4'
+        'section-5 section-5'
+        'section-6 section-6'
+        ;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .rate-us {
+       grid-area: section-6;
+    }
+
+    .rate-button{
+        width: initial;
+    }
+
+    .review-cards-wrapper {
+        display: flex;
+    }
+
+    .review-card {
+        margin-top: initial;
+        width: 30%;
+    }
+
+    .introduction {
+        grid-area: section-1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .introduction h1, .wait-times h1 {
+        font-family: 'Rationale', sans-serif;
+        font-size: 9.4rem ;
+        font-weight: 100;
+        padding: 4rem;
+    }
+
+    .introduction h2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 100;
+        font-size: 4.8rem;
+    }
+
+    .introduction h4 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 100;
+        font-size: 3.8rem;
+    }
+
+    .introduction-middle {
+        padding: 4rem;
+    }
+}
