@@ -646,13 +646,13 @@ h2 .linkto {
     text-decoration: none;
 }
 
-/* ---navigation-button for mobile--- */
+/* ---Navigation-button for mobile--- */
 
 .nav-toggle {
-    display:none;
+    display: none;
 }
 
-.nav-container{ 
+.nav-container { 
     margin: 0;
     display: flex;
     position: fixed;
@@ -662,28 +662,26 @@ h2 .linkto {
     align-items: center;
 }
 
-
 .nav-links {
     content: "";
     width: 6.4rem;
     height: 6.4rem;
     border-radius: 50%;
-    position:sticky;
+    position: sticky;
     top: 0;
     background-color: hsla(0, 0%, 0%, 0.8);
     transform: scale(1);
     transition: transform 1000ms ease;
-
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
     content: "";
     width: 5.2rem;
     height: 5.2rem;
     position: absolute;
     z-index: 2;
-
 }
+
 .location-icon {
     display: flex;
     position: fixed;
@@ -696,17 +694,21 @@ h2 .linkto {
     bottom: 2.8rem;
     right: 2.8rem;
 }
-.nav-toggle-label img, .location-icon img {
+
+.nav-toggle-label img,
+.location-icon img {
     width: 5.2rem;
     height: 5.2rem;
     border-radius: 50%;
 }
-.location-icon a{
+
+.location-icon a {
     height: 5.2rem;
     width: 5.2;
-    margin:auto;
+    margin: auto;
 }
-.nav-toggle-label::after{
+
+.nav-toggle-label::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -725,7 +727,8 @@ h2 .linkto {
 @keyframes pulse {
     100% {transform: scale(1.2,1.2);}
 }
-.reset-label{
+
+.reset-label {
     content: "";
     width: 150%;
     height: 175%;
@@ -733,60 +736,63 @@ h2 .linkto {
     position: fixed;
     background-color: transparent;
     z-index: -1;
-
 }
 
-.nav-toggle:checked ~ .nav-links{
+.nav-toggle:checked ~ .nav-links {
     transform: scale(6.25);
 }
-.nav-toggle:checked ~ .nav-toggle-label::after{
+
+.nav-toggle:checked ~ .nav-toggle-label::after {
     animation-play-state: paused;
 }
-.nav-toggle:checked ~ .reset-label{
-    display:block;
+
+.nav-toggle:checked ~ .reset-label {
+    display: block;
 }
 
-
-.nav-item{
+.nav-item {
     display: flex;
     background-color: var(--clr-yellow1);
     opacity: 0;
     position: absolute;
     transform: scale(0.7);
-    width:5.2rem;
+    width: 5.2rem;
     height: 5.2rem;
     border-radius: 50%;
     z-index: 1;
     text-align: center;
     transition: transform 1000ms ease, opacity 1000ms cubic-bezier(.60,0,0,0);
 }
-.nav-item a{
+
+.nav-item a {
     display: inline-block;
     text-decoration: none;
     width: 100%;
-    height:100%;
+    height: 100%;
     border-radius: 50%;
     color: black;
     line-height: 5.2rem;
 }
+
 .nav-toggle:checked ~ #nav1 {
     transform: var(--translate1);
     opacity: 1;
 }
+
 .nav-toggle:checked ~ #nav2 {
     transform: var(--translate3of7);
     opacity: 1;
 }
+
 .nav-toggle:checked ~ #nav3 {
     transform: var(--translate5of7);
     opacity: 1;
 }
+
 .nav-toggle:checked ~ #nav4 {
     transform: var(--translate7of7);
     opacity: 1;
-
 }
-
 
 .logo {
     height: 5rem;
