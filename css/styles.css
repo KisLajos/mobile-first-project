@@ -1,7 +1,9 @@
+/* ---Font imports--- */
 @import url('https://fonts.googleapis.com/css?family=Rationale&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/* ---Variables--- */
 :root {
     --clr-black08: rgba(43, 42, 40, 0.8);
     --clr-black095: rgba(40.85, 39.9, 38);
@@ -19,21 +21,25 @@
 
 }
 
+/* ---CSS reset--- */
 *,*::after,*::before {
     box-sizing: border-box;
     margin: 0 0;
     padding: 0 0;
 }
-html{
+
+/* ---Base styling--- */
+html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     position: relative;
 }
+
 body {
     background-color: white;
-
-    
 }
+
+/* ---Grid base--- */
 .content,
 .repair-content,
 .selection-content,
@@ -61,7 +67,7 @@ body {
     grid-template-columns: 1fr;
 }
 
-
+/* ---header & footer--- */
 header {
     background-color: var(--clr-black095);
     display: flex;
@@ -72,7 +78,7 @@ header {
 footer {
     background-color: var(--clr-black095);
     width: 100%;
-    position:relative;
+    position: relative;
     bottom: 0rem;
     z-index: 1;
     display: flex;
@@ -80,50 +86,50 @@ footer {
     align-items: center;
     height: 9.5rem;
 }
-#find-us footer{
+
+#find-us footer {
     bottom:-9.5rem;
 }
 
-/* ---navigation in header on desktop--- */
+/* ---Navigation in header on desktop--- */
 
 .desktop-nav ul {
-    position:relative;
+    position: relative;
     list-style-type: none;
     text-align: center;
-    margin:auto;
+    margin: auto;
     display: none;
     align-content: flex-end;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 0rem;
     margin: 3rem 0.3rem 0 0;
-
-   
 }
+
 .desktop-nav li {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 100;;
     text-transform: uppercase;
-    display:inline-block;
+    display: inline-block;
     transition: ease 0.5s;
     padding: 0 0 0 0;
     margin: 0;
-   
 }
+
 .desktop-nav li:hover {
     box-shadow: inset 0px 0px 10px black;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-
 }
 
 .desktop-nav a {
     font-size: 2.5rem;
-    display:block;
+    display: block;
     text-decoration: none;
-    color:var(--clr-yellow1);
+    color: var(--clr-yellow1);
     padding: 0rem 0.5rem 0rem 0.5rem;
     margin: 1.6rem 2rem 0.2rem 2rem;
 }
+
 .header-links hr {
     margin: 1rem 0.3rem 0.0rem 0.3rem;
     color: var(--clr-yellow1);
@@ -134,7 +140,6 @@ footer {
 }
 
 /* ---home page--- */
-
 
 .introduction {
     grid-area: section-1;
