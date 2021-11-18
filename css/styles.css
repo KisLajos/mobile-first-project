@@ -514,6 +514,12 @@ td {
     margin-bottom: 2rem;
     margin-inline: auto;
 }
+.prices h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    color: var(--clr-black095);
+    margin:0 0 0 0;
+}
 
 .repair-content > .repair-box1 {
     grid-area: section-2;
@@ -548,12 +554,11 @@ td {
 .information h1,
 .information h2,
 .social-media h1,
-.social-media h2,
-.prices h2 {
+.social-media h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 100;
     color: var(--clr-black095);
-    margin: 0 0 0 1rem
+    margin: 0 0 0 1rem;
 
 }
 
