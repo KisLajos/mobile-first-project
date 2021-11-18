@@ -536,62 +536,74 @@ td {
     grid-area: section-5;
 }
 
-/* ---contact sub-page--- */
+/* ---Contact sub-page--- */
 
-
-.information, .social-media{
+.information,
+.social-media {
     display: flex;
     flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
 }
-.information h1, .information h2, .social-media h1, .social-media h2, .prices h2 {
+
+.information h1,
+.information h2,
+.social-media h1,
+.social-media h2,
+.prices h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 100;
     color: var(--clr-black095);
     margin: 0 0 0 1rem
 
 }
-.information h1, .social-media h1 {
+
+.information h1,
+.social-media h1 {
     font-size: 3.9rem;
 }
-.information h2, .social-media h2 {
+
+.information h2,
+.social-media h2 {
     font-size: 2.4rem;
 }
+
 h2 .linkto {
     align-self: flex-end;
     text-align: right;
     text-decoration: none;
 }
+
 .information hr,
 .social-media hr {
     width: 80%;
     margin: 0.5rem 0 1.5rem 1rem;
 }
+
 .message-us {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
     justify-content: center;
     text-decoration: none;
-    /* position: relative;
-    left: -1.8rem; */
 }
+
 .message-us img {
     height: 6rem;
 }
+
 .message-us a {
     text-decoration: none;
     color: var(--clr-black095);
-    
 }
-.message-us h2{
-    
+
+.message-us h2 {
     font-family: 'Rationale', sans-serif;
     margin-left: 1rem;
     font-size: 2.6rem;
     font-weight: 100;
 }
+
 .social-media .social-icons{
     display: flex;
     justify-content: center;
@@ -602,7 +614,6 @@ h2 .linkto {
     min-width: 38rem;
     max-width: 45rem;
     margin-bottom: 5rem;
-
 }
 
 .info-box-contact table {
@@ -615,19 +626,19 @@ h2 .linkto {
     margin: 1rem 0;
 }
 
-.contact-content > .information{
+.contact-content > .information {
     grid-area: section-2;
 }
 
-.contact-content > .message-us{
+.contact-content > .message-us {
     grid-area: section-3;
 }
 
-.contact-content > .social-media{
+.contact-content > .social-media {
     grid-area: section-4;
 }
 
-.contact-content > .info-box-contact{
+.contact-content > .info-box-contact {
     grid-area: section-5;
 }
 
