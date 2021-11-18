@@ -463,74 +463,78 @@ td {
     display: none;
 }
 
-/* ---repair sub-page--- */
+/* ---Repair sub-page--- */
 
-.info-box .repair-text{
+.info-box .repair-text {
     font-size: 2.5rem;
     margin: 2rem 1.5rem
 }
+
 .wait-times {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
-
 }
+
 .waiting-img {
-    display:none;
+    display: none;
     position: relative;
     width: 100%;
     max-width: 30rem;
     margin: 10rem 10rem 10rem auto;
     padding-left: 1rem;
-    
 }
+
 #discount-box {
     width: 65%;
     max-width: 40rem;
     margin-bottom: 5rem;
 }
-.repair-box1, .repair-box2{
+
+.repair-box1,
+.repair-box2 {
     margin-bottom: 3rem;
 }
+
 .prices {
     display: flex;
-    position:relative;
+    position: relative;
     justify-content: center;
     align-items: center;
     align-content: center;
     width: 80%;
     margin: auto;
 }
-.prices table{
+
+.prices table {
     padding: 0rem;
     width: 100%;
     min-width: none;
     max-width: 40rem;
     margin-bottom: 2rem;
     margin-inline: auto;
-
 }
 
-.repair-content > .repair-box1{
+.repair-content > .repair-box1 {
     grid-area: section-2;
 }
 
-.repair-content > .prices{
+.repair-content > .prices {
     grid-area: section-3;
 }
 
-.repair-content > #discount-box{
+.repair-content > #discount-box {
     grid-area: section-4;
 }
+
 .waiting-img {
     grid-area: section-5;
 }
-.repair-content > .wait-times{
+
+.repair-content > .wait-times {
     grid-area: section-5;
 }
-
-
 
 /* ---contact sub-page--- */
 
