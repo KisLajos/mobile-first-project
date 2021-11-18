@@ -929,7 +929,7 @@ h2 .linkto {
         grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .findus-content {
         grid-template-areas: 
         'section-1 section-3'
@@ -1133,15 +1133,19 @@ h2 .linkto {
         padding: unset;
     }
 
-    /* repair-page desktop */
+    /* ---Repair-page desktop--- */
+
     .repair-content .repair-img {
-        display:block;
+        display: block;
     }
+
     .repair-box1 {
         background-color: transparent;
         box-shadow: none;
     }
-    .repair-content .introduction::after, .img-container1::after{
+
+    .repair-content .introduction::after,
+    .img-container1::after {
             content: '';
             position: absolute;
             width: 100%;
@@ -1151,7 +1155,8 @@ h2 .linkto {
             left: 0;
             margin: 2rem 0;
     }
-    .wait-times::before, #discount-box + .img-container::before {
+    .wait-times::before,
+    #discount-box + .img-container::before {
         content: '';
         position: absolute;
         width: 100%;
@@ -1161,14 +1166,17 @@ h2 .linkto {
         left: 0;
         margin: 2rem 0;
     }
+
     .prices {
         width: 70%;
         max-width: 60rem;
         margin: 5rem auto 1rem auto;
     }
+
     .waiting-img {
-        display:block;
+        display: block;
     }
+
     .repair-box2 {
         max-width: 40rem;
     }
