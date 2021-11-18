@@ -946,7 +946,7 @@ h2 .linkto {
      }
 
     /* Gallery slider for desktop */
-    
+
     .gallery-cell {
         width: 33%;
         max-width: 80%;
@@ -956,9 +956,13 @@ h2 .linkto {
         margin-right: 1rem;
     }  
 
-    .rate-button{
+    /* Reset rate button to full size */
+
+    .rate-button {
         width: initial;
     }
+
+    /* Info boxes */
 
     .info-box-home {
         width: 30%;
@@ -970,6 +974,8 @@ h2 .linkto {
         margin: 0 auto;
     }
 
+    /* Review cards */
+    
     .reviews-title {
         font-size: 4rem;
     }
@@ -989,6 +995,8 @@ h2 .linkto {
         margin: 0;
     }
 
+    /* Page introductions */
+
     .introduction {
         grid-area: section-1;
         display: flex;
@@ -1003,10 +1011,6 @@ h2 .linkto {
         font-size: 9.4rem ;
         font-weight: 100;
         padding: 4rem;
-    }
-    
-    .findus-content h1 {
-        padding: 1rem;
     }
 
     .introduction-contact {
@@ -1031,6 +1035,10 @@ h2 .linkto {
 
     .introduction-middle {
         padding: 4rem;
+    }
+
+    .findus-content h1 {
+        padding: 1rem;
     }
 
     .tagline h2 {
@@ -1158,6 +1166,7 @@ h2 .linkto {
             left: 0;
             margin: 2rem 0;
     }
+    
     .wait-times::before,
     #discount-box + .img-container::before {
         content: '';
