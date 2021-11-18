@@ -654,7 +654,7 @@ h2 .linkto {
     height: 6.4rem;
     border-radius: 50%;
     background-color: hsla(0, 0%, 0%, 0.8);
-    align-items: center;
+    align-content: center;
     justify-content: center;
     bottom: 2.8rem;
     right: 2.8rem;
@@ -663,7 +663,11 @@ h2 .linkto {
     width: 5.2rem;
     height: 5.2rem;
     border-radius: 50%;
-    position: relative;
+}
+.location-icon a{
+    height: 5.2rem;
+    width: 5.2;
+    margin:auto;
 }
 .nav-toggle-label::after{
     content: "";
