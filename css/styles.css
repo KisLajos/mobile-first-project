@@ -962,7 +962,7 @@ h2 .linkto {
         width: initial;
     }
 
-    /* Info boxes */
+    /* --- Home page desktop--- */
 
     .info-box-home {
         width: 30%;
@@ -1037,13 +1037,11 @@ h2 .linkto {
         padding: 4rem;
     }
 
-    .findus-content h1 {
-        padding: 1rem;
-    }
-
     .tagline h2 {
         font-size: 5rem;
     }
+
+    /* ---Selection page desktop--- */
 
     #selection-box {
         background-color: var(--clr-white);
@@ -1091,6 +1089,8 @@ h2 .linkto {
         border: solid 1px var(--clr-black095);
         margin-bottom: 2rem;
     }
+
+    /* ---Contact page desktop--- */
 
     .contact-content > .introduction {
         display: block;
@@ -1144,7 +1144,7 @@ h2 .linkto {
         padding: unset;
     }
 
-    /* ---Repair-page desktop--- */
+    /* ---Repair page desktop--- */
 
     .repair-content .repair-img {
         display: block;
@@ -1166,7 +1166,7 @@ h2 .linkto {
             left: 0;
             margin: 2rem 0;
     }
-    
+
     .wait-times::before,
     #discount-box + .img-container::before {
         content: '';
@@ -1195,6 +1195,10 @@ h2 .linkto {
 
     /* ---Find us page desktop--- */
 
+    .findus-content h1 {
+        padding: 1rem;
+    }
+    
     .address {
         width: 40%;
         position: relative;
