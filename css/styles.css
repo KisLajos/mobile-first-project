@@ -810,6 +810,10 @@ h2 .linkto {
     justify-content: center;
     align-items: center;
     margin: 1rem 2rem;
+
+}
+iframe{
+    width: 100%;
 }
 
 .address-wrapper {
