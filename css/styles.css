@@ -14,11 +14,11 @@
     --clr-white: rgba(255, 255, 255, 0.85);
     --constant: 0.14;
     --translate1: translate(calc(-14.781rem * var(--constant)), calc(-98.902rem * var(--constant)));
-    --translate2of7: translate(calc(16.218rem * var(--constant)), calc(-98.676rem * var(--constant)));
+    
     --translate3of7: translate(calc(45.658rem * var(--constant)), calc(-88.968rem * var(--constant)));
-    --translate4of7: translate(calc(70.711rem * var(--constant)), calc(-70.711rem * var(--constant)));
+    
     --translate5of7: translate(calc(88.968rem * var(--constant)), calc(-45.658rem * var(--constant)));
-    --translate6of7: translate(calc(98.676rem * var(--constant)), calc(-16.218rem * var(--constant)));
+    
     --translate7of7: translate(calc(98.902rem * var(--constant)), calc(14.781rem * var(--constant)));
 }
 
@@ -509,7 +509,6 @@ td {
 .prices table {
     padding: 0rem;
     width: 100%;
-    min-width: none;
     max-width: 40rem;
     margin-bottom: 2rem;
     margin-inline: auto;
@@ -709,7 +708,7 @@ h2 .linkto {
 
 .location-icon a {
     height: 5.2rem;
-    width: 5.2;
+    width: 5.2rem;
     margin: auto;
 }
 
