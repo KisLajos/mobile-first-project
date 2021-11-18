@@ -622,7 +622,6 @@ h2 .linkto {
     left: 2.8rem;
     justify-content: center;
     align-items: center;
-
 }
 
 
@@ -875,26 +874,8 @@ h2 .linkto {
         grid-template-columns: 1fr 1fr;
     }
 
-    .gallery-cell {
-        width: 33%;
-        max-width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 1rem;
-    }  
     
-    /* .contact-content {
-        grid-template-areas: 
-        'section-2 section-1'
-        'section-3 section-3'
-        'section-4 section-4'
-        'section-5 section-5'
-        'section-6 section-6'
-        ;
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: 1fr 1fr;
-    } */
+    
     
     .findus-content {
         grid-template-areas: 
@@ -904,7 +885,14 @@ h2 .linkto {
         grid-template-rows: repeat(2, auto);
         grid-template-columns: 1fr 1fr;
     }
-
+    .gallery-cell {
+            width: 33%;
+            max-width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+    }  
     .rate-us {
        grid-area: section-6;
     }
