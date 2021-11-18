@@ -370,7 +370,7 @@ footer {
     grid-area: section-5;
 }
 
-/* ---selection page--- */
+/* ---Selection sub-page--- */
 
 .gallery-cell {
     width: 100%;
@@ -429,42 +429,41 @@ td {
     font-weight: 100;
 }
 
-
-.selection-content > #selection-box{
+.selection-content > #selection-box {
     grid-area: section-2;
 }
 
-.selection-content > .whats-in-store{
+.selection-content > .whats-in-store {
     grid-area: section-3;
 }
 
-.selection-content > .handled-with-care{
+.selection-content > .handled-with-care {
     grid-area: section-4;
 }
 
-.selection-content > .be-sure{
+.selection-content > .be-sure {
     grid-area: section-5;
 }
 
 .whats-in-store hr {
     display: none;
 }
-.be-sure .info-box{
+
+.be-sure .info-box {
     margin-top: 2rem;
     margin-bottom: 4rem;
     text-align: center;
 }
+
 #selection-box {
     text-align: center;
 }
+
 .be-sure hr {
     display: none;
 }
 
-
-
 /* ---repair sub-page--- */
-
 
 .info-box .repair-text{
     font-size: 2.5rem;
