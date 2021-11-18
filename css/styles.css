@@ -870,19 +870,28 @@ h2 .linkto {
     font-size: 2.4rem;
 }
 
+/* ---Desktop media query--- */
+
 @media screen and (min-width: 900px) {
+
     header {
         justify-content: space-between;
     }
+
     .desktop-nav ul {
         display: flex;
     }
+
+    /* Hide nav menu and chain image */
     .nav-container {
         display: none;
     }
+
     .chain {
         display: none;
     }
+
+    /* Grid areas for desktop */
     .content {
         grid-template-areas: 
         'section-2 section-1'
@@ -894,9 +903,11 @@ h2 .linkto {
         grid-template-rows: repeat(5, auto);
         grid-template-columns: 1fr 1fr;
     }
-    .repair-content > .wait-times{
+
+    .repair-content > .wait-times {
         grid-area: section-6;
     }
+
     .repair-content {
         grid-template-areas: 
         'section-1 section-2'
@@ -927,17 +938,20 @@ h2 .linkto {
         grid-template-rows: repeat(2, auto);
         grid-template-columns: 1fr 1fr;
     }
-    .gallery-cell {
-            width: 33%;
-            max-width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1rem;
-    }  
+
     .rate-us {
-       grid-area: section-6;
-    }
+        grid-area: section-6;
+     }
+
+    /* Gallery slider for desktop */
+    .gallery-cell {
+        width: 33%;
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+    }  
 
     .rate-button{
         width: initial;
@@ -946,8 +960,8 @@ h2 .linkto {
     .info-box-home {
         width: 30%;
         min-width: 40rem;
-
     }
+
     .info-box-home table {
         width: 80%;
         margin: 0 auto;
@@ -967,6 +981,7 @@ h2 .linkto {
         margin-top: initial;
         width: 30%;
     }
+
     .review-body {
         margin: 0;
     }
@@ -979,19 +994,21 @@ h2 .linkto {
         justify-content: center;
     }
 
-    .introduction h1, .wait-times h1 {
+    .introduction h1,
+    .wait-times h1 {
         font-family: 'Rationale', sans-serif;
         font-size: 9.4rem ;
         font-weight: 100;
         padding: 4rem;
     }
+    
     .findus-content h1 {
         padding: 1rem;
     }
 
     .introduction-contact {
         font-family: 'Rationale', sans-serif;
-        font-size: 7rem ;
+        font-size: 7rem;
         font-weight: 100;
     }
 
@@ -1006,7 +1023,7 @@ h2 .linkto {
         font-weight: 100;
         font-size: 3.8rem;
         text-align: center;
-        margin:0;
+        margin: 0;
     }
 
     .introduction-middle {
@@ -1015,7 +1032,6 @@ h2 .linkto {
 
     .tagline h2 {
         font-size: 5rem;
-
     }
 
     #selection-box {
@@ -1115,10 +1131,6 @@ h2 .linkto {
 
     .introduction-contact {
         padding: unset;
-    }
-
-    .chain{
-        display: none;
     }
 
     /* repair-page desktop */
