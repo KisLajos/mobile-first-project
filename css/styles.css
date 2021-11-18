@@ -16,7 +16,6 @@
     --translate5of7: translate(calc(88.968rem * var(--constant)), calc(-45.658rem * var(--constant)));
     --translate6of7: translate(calc(98.676rem * var(--constant)), calc(-16.218rem * var(--constant)));
     --translate7of7: translate(calc(98.902rem * var(--constant)), calc(14.781rem * var(--constant)));
-
 }
 
 *,*::after,*::before {
@@ -873,9 +872,6 @@ h2 .linkto {
         grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr 1fr;
     }
-
-    
-    
     
     .findus-content {
         grid-template-areas: 
