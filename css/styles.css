@@ -7,19 +7,19 @@
 /* ---Variables--- */
 
 :root {
+    /* --colors-- */
     --clr-black08: rgba(43, 42, 40, 0.8);
     --clr-black095: rgba(40.85, 39.9, 38);
     --clr-yellow09: rgba(254, 237, 1, 0.9);
     --clr-yellow1: rgba(254, 237, 1);
     --clr-white: rgba(255, 255, 255, 0.85);
+    
+    /* --navigation button-- */
     --constant: 0.14;
     --translate1: translate(calc(-14.781rem * var(--constant)), calc(-98.902rem * var(--constant)));
-    
-    --translate3of7: translate(calc(45.658rem * var(--constant)), calc(-88.968rem * var(--constant)));
-    
-    --translate5of7: translate(calc(88.968rem * var(--constant)), calc(-45.658rem * var(--constant)));
-    
-    --translate7of7: translate(calc(98.902rem * var(--constant)), calc(14.781rem * var(--constant)));
+    --translate2: translate(calc(45.658rem * var(--constant)), calc(-88.968rem * var(--constant)));
+    --translate3: translate(calc(88.968rem * var(--constant)), calc(-45.658rem * var(--constant)));
+    --translate4: translate(calc(98.902rem * var(--constant)), calc(14.781rem * var(--constant)));
 }
 
 /* ---CSS reset--- */
@@ -41,7 +41,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: var(--clr-white);
 }
 
 /* ---Grid base--- */
@@ -801,17 +801,17 @@ h2 .linkto {
 }
 
 .nav-toggle:checked ~ #nav2 {
-    transform: var(--translate3of7);
+    transform: var(--translate2);
     opacity: 1;
 }
 
 .nav-toggle:checked ~ #nav3 {
-    transform: var(--translate5of7);
+    transform: var(--translate3);
     opacity: 1;
 }
 
 .nav-toggle:checked ~ #nav4 {
-    transform: var(--translate7of7);
+    transform: var(--translate4);
     opacity: 1;
 }
 
